@@ -15,5 +15,5 @@ css
 
 * [W3C 吴小倩 - CSS性能](http://www.w3.org/2015/Talks/0109-CSSConf-xq/)
 
-* []()
+* [Jaych Su - Flexbox，更优雅的布局](http://mp.weixin.qq.com/s?__biz=MjM5ODc4MjcyMA==&mid=204599828&idx=1&sn=c6781fb2e52c2c9b07236c84354d1e97#rd)
 
