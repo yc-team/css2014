@@ -123,3 +123,28 @@ shadow.appendChild(clone);
 
 区别在于template里面换成了 content。
 content的内容来自 shadow host 里的内容。
+
+
+## 样式相关
+
+Shadow DOM 中定义的 CSS 样式只在 ShadowRoot 下生效。这意味着样式被封装了起来。
+
+#### 例子：[在线地址](http://jsfiddle.net/zhangyaochun/h3evr8df/)
+
+
+``` html
+<div>
+    <h3>原来的节点h3-1</h3>
+    <h3>原来的节点h3-2</h3>
+</div>
+```
+
+``` js
+//createShadowRoot
+var root = document.querySelector('div').createShadowRoot();
+root.innerHTML = '<style>h3{ color: red; }</style>' +
+    '<h3>欢迎加入豌豆荚</h3>';
+```
+
+* 页面中存在多个 h3 标签。但被 h3 选择器所匹配并且样式为红色的只有在 ShadowRoot 的那个元素。
+* 页面中定义的其他关于 h3 的样式并没有影响我们的内容。原因在于选择器无法越过 shadow 边界。
