@@ -21,3 +21,30 @@ css
 
 > 视频啊，专业
 
+
+
+## webcomponents
+
+* 组件化开发
+* 自定义标签 
+
+``` html
+<custom-element></custom-element>
+```
+
+* 隐藏内部结构
+
+Shadow DOM
+
+``` html
+<custom-element>
+  <!-- shadow-root -->
+    <style>...</style>
+    <!-- 内部结构 -->
+  <!-- shadow-root -->
+</custom-element>
+```
+
+1、生命周期
+2、交互行为
+3、自定义事件
