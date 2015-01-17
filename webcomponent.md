@@ -28,4 +28,8 @@ document.getElementById('get').onclick = function () {
 };
 ```
 
+你不应该把内容放到 Shadow DOM 中。
+这里id为test的按钮和一个新类型的节点关联起来了 - shadow root。
+与一个 shadow root关联的元素（这个是id为test的按钮）- shadown host
+
 
