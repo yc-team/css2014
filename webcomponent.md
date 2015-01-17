@@ -122,3 +122,4 @@ shadow.appendChild(clone);
 ```
 
 区别在于template里面换成了 content。
+content的内容来自 shadow host 里的内容。
