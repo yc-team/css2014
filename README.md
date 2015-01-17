@@ -17,3 +17,7 @@ css
 
 * [Jaych Su - Flexbox，更优雅的布局](http://mp.weixin.qq.com/s?__biz=MjM5ODc4MjcyMA==&mid=204599828&idx=1&sn=c6781fb2e52c2c9b07236c84354d1e97#rd)
 
+* [勾三股四 - Web Components 中的 CSS](http://www.tudou.com/programs/view/8bvwGHaL6T4/)
+
+> 视频啊，专业
+
