@@ -5,7 +5,7 @@
 ## 组成：
 
 * Templates
-* Shadow DOM
+* Shadow DOM - 解决了 DOM 树的封装问题。
 * Custom Elements
 * Packaging
 
