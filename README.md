@@ -19,7 +19,9 @@ css
 
 * [勾三股四 - Web Components 中的 CSS](http://www.tudou.com/programs/view/8bvwGHaL6T4/)
 
-> 视频啊，专业
+> 视频啊，专业，有两个版本，一个是现场火箭版的，一个是慢的
+
+注释：[慢的在这里](http://www.tudou.com/programs/view/dz4aXjDFnLw/)
 
 
 
@@ -56,5 +58,25 @@ Shadow DOM
 :host(<selector>)
 :host-context(<selector>)
 ```
+
+#### 
+
+``` css
+::shadow
+/deep/
+```
+
+#### 内部判断子元素
+
+``` css
+::content
+```
+
+#### 实践：
+
+* 管理后台
+
+
+* Zorro.html
 
 
