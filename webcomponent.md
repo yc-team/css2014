@@ -148,3 +148,32 @@ root.innerHTML = '<style>h3{ color: red; }</style>' +
 
 * 页面中存在多个 h3 标签。但被 h3 选择器所匹配并且样式为红色的只有在 ShadowRoot 的那个元素。
 * 页面中定义的其他关于 h3 的样式并没有影响我们的内容。原因在于选择器无法越过 shadow 边界。
+
+
+
+#### 如何添加 ShadowRoot 的样式，[在线地址](http://jsfiddle.net/zhangyaochun/9x90cy6L/)
+
+``` html
+<button class="red">Join us</button>
+```
+
+``` css
+.red {
+    color: red;
+    font-size: 24px;
+}
+```
+
+``` js
+//createShadowRoot
+var button = document.querySelector('button');
+var root = button.createShadowRoot();
+root.innerHTML = '<style>' +
+    ':host { color: yellow; border: 1px solid blue;}' +
+    '</style>' +
+    '<content></content>';
+```
+
+可以看出：
+* 父页面定义的样式规则的特异性要高于元素中定义的 :host 规则
+* :host 仅在 ShadowRoot 的范围内生效，无法用它来影响 Shadow DOM 外的元素。
