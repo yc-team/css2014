@@ -33,6 +33,9 @@ document.getElementById('get').onclick = function () {
 这里id为test的按钮和一个新类型的节点关联起来了 - shadow root。
 与一个 shadow root关联的元素（这个是id为test的按钮）- shadown host
 
+注释：
+
+> shadow host 的内容不会渲染；shadow root 的内容会渲染。
 
 #### 第二个例子：[在线地址](http://jsfiddle.net/zhangyaochun/maf57rot/)
 
