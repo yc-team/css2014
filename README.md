@@ -48,3 +48,13 @@ Shadow DOM
 1、生命周期
 2、交互行为
 3、自定义事件
+
+#### 判断外部环境
+
+``` css
+:host
+:host(<selector>)
+:host-context(<selector>)
+```
+
+
