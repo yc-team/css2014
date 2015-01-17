@@ -80,6 +80,42 @@ var clone = document.importNode(template.content, true);
 shadow.appendChild(clone);
 ```
 
+#### 改进后的例子：[在线地址](http://jsfiddle.net/zhangyaochun/vhzhrns7/)
 
 
+内容在文档内；展现在 Shadow DOM 里。
 
+``` html
+<div id="nameTag">fe-team</div>
+<template id="nameTagTemplate">
+    <style>
+        .outer {
+            border: 2px solid brown;
+            border-radius: 1em;
+            background: red;
+            font-size: 20pt;
+            width: 12em;
+            height: 7em;
+            text-align: center;
+        }
+        .boilerplate {
+            color: white;
+            font-family: sans-serif;
+            padding: 0.5em;
+        }
+        .name {
+            color: black;
+            background: white;
+            font-family:"Marker Felt", cursive;
+            font-size: 45pt;
+            padding-top: 0.2em;
+        }
+    </style>
+    <div class="outer">
+        <div class="boilerplate">欢迎加入豌豆荚</div>
+        <content></content>
+    </div>
+</template>
+```
+
+区别在于template里面换成了 content。
