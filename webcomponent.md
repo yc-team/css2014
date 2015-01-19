@@ -166,8 +166,8 @@ root.innerHTML = '<style>h3{ color: red; }</style>' +
 ```
 
 ``` js
-//createShadowRoot
 var button = document.querySelector('button');
+//createShadowRoot
 var root = button.createShadowRoot();
 root.innerHTML = '<style>' +
     ':host { color: yellow; border: 1px solid blue;}' +
@@ -179,7 +179,45 @@ root.innerHTML = '<style>' +
 * 父页面定义的样式规则的特异性要高于元素中定义的 :host 规则
 * :host 仅在 ShadowRoot 的范围内生效，无法用它来影响 Shadow DOM 外的元素。
 
+#### ::content 伪元素
 
+> Shadow DOM 规范使用 ::content 替换了旧的 ::distributed()。
+
+[在线地址](http://jsfiddle.net/zhangyaochun/erbpcaro/)
+
+``` html
+<div>
+  <h3>加入豌豆荚</h3>
+  <section>
+    <div>fe-team</div>
+    <p>welcome you~</p>
+  </section>
+</div>
+```
+
+``` js
+var div = document.querySelector('div');
+//createShadowRoot
+var root = div.createShadowRoot();
+root.innerHTML = '\
+    <style>\
+      h3 { color: red; }\
+      content[select="h3"]::content > h3 {\
+        color: green;\
+      }\
+      ::content section div {\
+        color: yellow;\
+      }\
+      ::content section p {\
+        text-decoration: underline;\
+      }\
+    </style>\
+    <h3>欢迎加入豌豆荚</h3>\
+    <content select="h3"></content>\
+    <content select="section"></content>';
+```
+
+我们看到例子中我们给content里面的section的子元素div和p各自设置了样式。
 
 
 扩展链接：
