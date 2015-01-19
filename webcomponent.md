@@ -229,9 +229,12 @@ root.innerHTML = '\
 
 不管 shadow 里面有多少层，里面都是可以生效的。
 
+The /deep/ combinator is similar to ::shadow, but more powerful. It completely ignores all shadow boundaries and crosses into any number of shadow trees.
+
 
 扩展链接：
 
 * [webcomponents org网站](http://webcomponents.org/)
 * [MDN Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+* [Shadow DOM 101](http://www.html5rocks.com/zh/tutorials/webcomponents/shadowdom/)
 * [Shadow DOM 201](http://www.html5rocks.com/zh/tutorials/webcomponents/shadowdom-201/)
