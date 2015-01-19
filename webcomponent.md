@@ -34,6 +34,9 @@ document.getElementById('get').onclick = function () {
 这里id为test的按钮和一个新类型的节点关联起来了 - shadow root。
 与一个 shadow root关联的元素（这个是id为test的按钮）- shadown host
 
+> the element that you call createShadowRoot on is known as the Shadow Host.
+> The document fragment returned by createShadowRoot is known as the Shadow Root.The shadow root, and its descendants(子节点), are hidden from the user, but they're what the browser will actually render when it sees our tag.
+
 注释：
 
 > shadow host 的内容不会渲染；shadow root 的内容会渲染。
@@ -177,7 +180,7 @@ root.innerHTML = '<style>' +
 
 可以看出：
 * 父页面定义的样式规则的特异性要高于元素中定义的 :host 规则
-* :host 允许你选择并样式化 shadow 树所寄宿的元素
+* :host 允许你选择并样式化 shadow 树所寄宿的元素，可以从 shadow 里面找到外部的元素
 * :host 仅在 ShadowRoot 的范围内生效，无法用它来影响 Shadow DOM 外的元素。
 
 

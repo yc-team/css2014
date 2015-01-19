@@ -62,16 +62,37 @@ Shadow DOM
 #### 判断外部环境
 
 ``` css
-:host
-:host(<selector>)
-:host-context(<selector>)
+:host    					shadow 所属的元素
+:host(<selector>)           shadow 所属的元素本身匹配selector
+:host-context(<selector>)   外部的环境
 ```
 
-#### 
+举例：
+
+:host-context 外部的环境
+
+``` css
+:host-context(body[env="phone"]) .phone img {
+	max-width: 200px;
+}
+```
+
+
+
+
+#### 判断内部结构
 
 ``` css
 ::shadow
 /deep/
+```
+
+举例：
+
+``` css
+cssconf-speaker::shadow .inner {
+	max-width: 200px;
+}
 ```
 
 #### 内部判断子元素
