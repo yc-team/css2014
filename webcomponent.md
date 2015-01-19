@@ -177,7 +177,9 @@ root.innerHTML = '<style>' +
 
 可以看出：
 * 父页面定义的样式规则的特异性要高于元素中定义的 :host 规则
+* :host 允许你选择并样式化 shadow 树所寄宿的元素
 * :host 仅在 ShadowRoot 的范围内生效，无法用它来影响 Shadow DOM 外的元素。
+
 
 #### ::content 伪元素
 
@@ -220,6 +222,9 @@ root.innerHTML = '\
 我们看到例子中我们给content里面的section的子元素div和p各自设置了样式。
 
 
+
 扩展链接：
 
+* [webcomponents org网站](http://webcomponents.org/)
 * [MDN Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+* [Shadow DOM 201](http://www.html5rocks.com/zh/tutorials/webcomponents/shadowdom-201/)
