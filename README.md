@@ -80,11 +80,11 @@ Shadow DOM
 
 
 
-#### 判断内部结构
+#### 外部判断内部结构
 
 ``` css
 ::shadow
-/deep/
+/deep/  不管 shadow 里面有多少层，里面都是可以生效的。
 ```
 
 举例：
@@ -95,10 +95,29 @@ cssconf-speaker::shadow .inner {
 }
 ```
 
+``` css
+html /deep/ [layout][horizontal] {
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+```
+
+
 #### 内部判断子元素
+
+通过 shadow 来判断子元素
 
 ``` css
 ::content
+```
+
+举例：
+
+``` css
+::content img {
+	max-width: 100px;
+}
 ```
 
 #### 实践：

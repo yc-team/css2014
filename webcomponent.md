@@ -225,6 +225,10 @@ root.innerHTML = '\
 我们看到例子中我们给content里面的section的子元素div和p各自设置了样式。
 
 
+#### /deep/ [在线地址](http://codepen.io/robdodson/pen/wraDn/?editors=100)
+
+不管 shadow 里面有多少层，里面都是可以生效的。
+
 
 扩展链接：
 
