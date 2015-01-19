@@ -8,6 +8,7 @@
 * Shadow DOM - 解决了 DOM 树的封装问题。
 * Custom Elements
 * Packaging
+* Imports
 
 > Chrome 25+ 支持 Shadow DOM，但 API 需要加 webkit 前缀。 在 Chrome 的最新版本中增加了无前缀的 API，可以通过开启 about:flags 下的 "实验性网络平台功能"来使用。
 
@@ -177,3 +178,10 @@ root.innerHTML = '<style>' +
 可以看出：
 * 父页面定义的样式规则的特异性要高于元素中定义的 :host 规则
 * :host 仅在 ShadowRoot 的范围内生效，无法用它来影响 Shadow DOM 外的元素。
+
+
+
+
+扩展链接：
+
+* [MDN Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
