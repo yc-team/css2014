@@ -154,6 +154,6 @@ order取值越大，越排在后面。并且 order 可以取负值。
 扩展阅读：
 
 * [w3的中文说明](http://www.w3.org/html/ig/zh/wiki/Css3-flexbox/zh-hans)
-
+* [Solved by Flexbox](http://philipwalton.github.io/solved-by-flexbox/)
 
 
